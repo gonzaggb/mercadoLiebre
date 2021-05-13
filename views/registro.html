@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/registro-styles.css">
+    <script src="https://kit.fontawesome.com/641c03bd1a.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    </style>
+    <script src="https://kit.fontawesome.com/641c03bd1a.js" crossorigin="anonymous"></script>
+    <title>MercadoLiebre</title>
+</head>
+
+<body>
+    <form class="form-container" action="/" method="get">
+        <div class="nombre-apellido">
+            <label for="name">Nombre y apellido</label>
+            <input type="text" name="name" id="name" value="">
+        </div>
+        <div class="username-container">
+            <label for="user">Nombre de usuario</label>
+            <input type="text" name="user" id="user" value="">
+        </div>
+        <div class="birthday-container">
+            <label for="fecha-nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="fecha-nacimiento" id="birthday" value="">
+        </div>
+        <div class="adress-container">
+            <label for="domicilio">Domicilio</label>
+            <input type="text" name="domicilio" id="domicilio" value="">
+        </div>
+        <div class="profile-container">
+            <label for="perfil-usuario">¿Sos comprador o vendedor?</label>
+            <label class=label-profile><input type="radio" name="perfil-usuario" value="buyer"> Comprador</label>
+            <label class=label-profile><input type="radio" name="perfil-usuario" value="seller"> Vendedor</label>
+        </div>
+        <div class="interest-container">
+            <label for="categorias-interes">Categorías de interés</label>
+            <label class=label-interest><input type="checkbox" name="categorias-interes" value="electro">Electro</label>
+            <label class=label-interest><input type="checkbox" name="categorias-interes" value="moda">Moda</label>
+            <label class=label-interest><input type="checkbox" name="categorias-interes" value="hogar">Hogar</label>
+            <label class=label-interest><input type="checkbox" name="categorias-interes" value="jugueteria">Juguetería</label>
+            <label class=label-interest><input type="checkbox" name="categorias-interes" value="vida sana">Vida sana</label>
+        </div>
+        <div class="photo-container">
+            <label for="foto">Elegí una foto de perfil</label>
+            <input type="file" accept="jpg, png">
+        </div>
+        <div class="password-container">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" name="contraseña" id="contraseña">
+        </div>
+        <div class="re-password-container">
+            <label for="recontraseña">Confirmar contraseña</label>
+            <input type="password" name="recontraseña" id="recontraseña">
+        </div>
+        <div class="button-container">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </div>
+    </form>
+</body>
