@@ -272,6 +272,7 @@ footer i{
         justify-content: space-between;
         gap: 10px;
         margin-bottom: 20px;
+        flex-wrap: nowrap;
 
     }
     .top-bar .logo{
@@ -281,7 +282,8 @@ footer i{
 
     }
     .top-bar .search-bar{
-        width: 20%;   
+        width: initial;
+        flex: grow 1;
         align-items: center;     
 
     }
