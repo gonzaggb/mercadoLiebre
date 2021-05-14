@@ -38,7 +38,6 @@ body{
     width: 50%;
     align-items: baseline;
     margin-top: 10px;
-    flex-grow:1
 
 }
 .logo{
@@ -283,14 +282,14 @@ footer i{
     }
     .top-bar .search-bar{
         width: initial;
-        flex: grow 1;
+        flex-grow: 1;
         align-items: center;     
 
     }
     .top-bar .cuotas{
         display: block;
         margin-right: 10px;
-        width: 35%;
+        width: 33%;
         text-align: right;
 
     }
