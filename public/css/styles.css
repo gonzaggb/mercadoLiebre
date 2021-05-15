@@ -93,16 +93,20 @@ header{
     width: 100%;
 }
 
-.offers h2{
+.titular-offers {
     font-size:24px;
     color: #666;
+    text-align: left;
+    margin-left: 15px;
+
 
 }
 .titular-ultima-visita{
     font-size:24px;
     color: #666;
     text-align: left;
-    display: inline-block;
+    margin-left: 15px;
+
 }
 .main-header{
     background-color: #FFE600;
@@ -133,7 +137,7 @@ header{
 }
 #descripcion{
     font-size:16px;
-    display:none;
+    opacity: 0;
 }
 .banner{
     width: 100%;
@@ -203,6 +207,7 @@ ul li{
 
 footer{
     text-align: center;
+    background-color: white;
 }
 
 footer i{
@@ -211,15 +216,34 @@ footer i{
     margin-bottom: 10px;
 }
 
-@media(min-width:361px){
+/* @media(min-width:361px){
 
-    #descripcion{
-        display:inline-block;
+    article #descripcion{
+        transition: opacity 0.5s;
+    }
+    article:hover #descripcion {
+        opacity: 1;
+        
     }
     article{
+        transition: all 0.5s;
+    }
+    article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
+    }
+    .detalle-producto i{
+        transform: rotate(0deg);
+        transition: all 1s;
+    }
+    article:hover .detalle-producto i{
+        transform: rotate(180deg);
+    }
+    
+    article{
         width: 40%;
     }
+
     .bottom-bar section{
         width: 50%;
     }
@@ -250,11 +274,25 @@ footer i{
     .precio-descuento{
         flex-direction: column;
     }
+    .titular-offers {
+    font-size:24px;
+    color: #666;
+    text-align: left;
+    margin-left: 15px;
 
+
+}
+.titular-ultima-visita{
+    font-size:24px;
+    color: #666;
+    text-align: left;
+    margin-left: 15px;
+
+}
 
   
 
-}
+} */
 @media(min-width:768px){
     .bottom-bar{
         display: flex;
@@ -264,9 +302,7 @@ footer i{
     .burger-menu{
         display: none;
     }
-    .articles article{
-        width: 20%;
-    }
+
     .top-bar{
         justify-content: space-between;
         gap: 10px;
@@ -275,7 +311,7 @@ footer i{
 
     }
     .top-bar .logo{
-        width: 33%;
+        width: 33.33%;
         margin-left: 10px;
         height: 70px;
 
@@ -289,14 +325,121 @@ footer i{
     .top-bar .cuotas{
         display: block;
         margin-right: 10px;
-        width: 33%;
+        width: 33.33%;
         text-align: right;
 
     }
     .main-header h4{
         width: 33%;
     }
+     .bottom-bar section{
+        width: 50%;
+    }
+ 
+    .bottom-menu{
+        display: flex;
+        justify-content: space-evenly;
 
+    }
+    .login-menu{
+        display: flex;
+        justify-content: space-evenly;
+        flex-grow: 1;
+
+    }
+    .login-menu i{
+        margin-left: 5px;
+    }
+    .articles{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .articles article{
+        width: 45%;
+    }
+    article #descripcion{
+        transition: opacity 0.5s;
+    }
+    article:hover #descripcion {
+        opacity: 1;
+        
+    }
+    article{
+        transition: all 0.5s;
+    }
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        
+    }
+    .detalle-producto i{
+        transform: rotate(0deg);
+        transition: all 1s;
+    }
+    article:hover .detalle-producto i{
+        transform: rotate(180deg);
+    }
+    footer{
+        margin-top:20px;
+    }
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 20px;
+        justify-content: center;
+    }
+    footer .footer-security {
+        width: 33%;
+    }
+    footer .footer-gift {
+        width: 33%;
+
+    }
+    footer .footer-credit-card{
+        width: 33%;
+    }
+
+    footer .footer-security i{
+        transition: color 0.7s;
+
+    }
+    footer .footer-gift i{
+        transition: color 0.7s;
+
+    }
+    footer .footer-credit-card i{
+        transition: color 0.7s;
+    }
+
+    footer .footer-security i:hover{
+        color: grey;
+    }
+    footer .footer-gift i:hover{
+        color: grey;
+    }
+    footer .footer-credit-card i:hover{
+        color: grey;
+    }
+    footer .copyright h3{
+        margin-top:20px;
+        font-weight:normal ;
+    }
+
+}
+@media(min-width:961px){
+    .articles article{
+        width: 22%;
+    }
+    .titular-offers {
+        margin-left: 40px;
+    
+    
+    }
+    .titular-ultima-visita{
+        margin-left: 40px;
+    
+    }
+}
 
     
-}

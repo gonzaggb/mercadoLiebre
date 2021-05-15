@@ -21,6 +21,7 @@ main{
     margin-bottom: 5px;
     border-radius: 3px;
     border: none;
+    padding: 5px;
 }
 
 .form-container button{
@@ -41,5 +42,15 @@ main{
     .form-container button{
         height: 30px;
     }
+
+    .form-container button{
+        
+        transition: all 0.5s;
+    }
+    .form-container:hover button{
+        background-color: #0022AA;
+
+    }
+ 
     
 }
