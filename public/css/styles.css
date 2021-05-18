@@ -208,11 +208,12 @@ ul li{
 footer{
     text-align: center;
     background-color: white;
+
 }
 
 footer i{
     color:#1259c3;
-    font-size: 2em;
+    font-size: 1em;
     margin-bottom: 10px;
 }
 
