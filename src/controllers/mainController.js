@@ -1,3 +1,7 @@
+const path = require('path')
+const app = express()
+publicPath = path.join(__dirname,'../public')
+app.use(express.static(publicPath));
 /*.render es un metodo de EJS que indica a la aplicación que debe mostrar la pagina, similar al sendFile de express*/
 const controller = {
     index: (req, res) => {
