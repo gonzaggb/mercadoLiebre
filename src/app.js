@@ -9,6 +9,7 @@ publicPath = path.join(__dirname,'../public') // indica que la ruta contiene rec
 app.use(express.static(publicPath)); //indica que los archivos son publicos
 app.listen(port,()=>console.log('Servidor corriendo en '+ port))
 /*HAY QUE INSTALAR npm install ejs --save para poder utilizar el template engine*/
+app.set('views',path.join(__dirname, 'views'))
 app.set('view engine', 'ejs') // configuro el template engine
 app.use('/', mainRoute) // defino a donde ir en caso de ingresar "/", voy al siguiente archivo const mainRoute = require('./routes/main')
 
