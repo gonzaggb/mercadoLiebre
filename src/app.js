@@ -5,7 +5,6 @@ const port = process.env.PORT || 3000
 const mainRoute = require('./routes/main') // defino la ruta de main
 
 publicPath = path.join(__dirname,'../public') // indica que la ruta contiene recursos estaticos para consumir de manera sencilla
-console.log(publicPath);
 
 app.use(express.static(publicPath)); //indica que los archivos son publicos
 app.listen(port,()=>console.log('Servidor corriendo en '+ port))
